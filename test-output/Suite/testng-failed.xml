@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test(failed)">
+    <classes>
+      <class name="let_me_test.Login_test_cases">
+        <methods>
+          <include name="Unsuccessful_login"/>
+          <include name="Successful_login"/>
+        </methods>
+      </class> <!-- let_me_test.Login_test_cases -->
+      <class name="let_me_test.komoot_landing_page">
+        <methods>
+          <include name="setDriver"/>
+        </methods>
+      </class> <!-- let_me_test.komoot_landing_page -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

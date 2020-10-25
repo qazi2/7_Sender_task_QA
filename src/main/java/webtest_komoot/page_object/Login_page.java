@@ -10,8 +10,9 @@ public class Login_page {
     private By email=By.cssSelector("[id='email']");
     private By password=By.cssSelector("[id='password']");
     private By c_w_email=By.cssSelector("[type='submit']"); // continue with email button
-    private By forgotPassword = By.cssSelector("[class='css-19qpw5e']");
+
     private By Login_button = By.cssSelector("[class='css-1how7p2']");
+    private By user_name=By.cssSelector("[id='display_name']");
 
     public Login_page(WebDriver driver) {
         // TODO Auto-generated constructor stub
@@ -21,12 +22,6 @@ public class Login_page {
     }
 
 
-    public Forgot_Password forgotPassword()
-    {
-        driver.findElement(forgotPassword).click();
-        return new Forgot_Password(driver);
-
-    }
     public WebElement getEmail()
     {
         return driver.findElement(email);
@@ -34,6 +29,7 @@ public class Login_page {
 
 
     public WebElement getPassword()
+
     {
         return driver.findElement(password);
     }
@@ -48,13 +44,10 @@ public class Login_page {
         return driver.findElement(Login_button);
     }
 
-
-
-
-
-
-
-
+    public WebElement getusername()
+    {
+        return driver.findElement(user_name);
+    }
 
 
 }
