@@ -7,6 +7,13 @@ Dependencies used in this project are Java Maven
 
 ###libraries used: Selenium, TestNG
 
+**Prerequisites**
+
+The following items should be installed in your system:
+
+Maven 3.6.3 https://maven.apache.org/download.cgi
+git command line tool (https://help.github.com/articles/set-up-git)
+
 **Steps to clone execute the tests**
 
 git clone https://github.com/qazi2/7_Sender_task_QA
