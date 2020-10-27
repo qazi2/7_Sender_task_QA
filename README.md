@@ -5,15 +5,15 @@ This is a web automation project using page object factory structure. TestNG is 
 
 Dependencies used in this project are Java Maven
 
-###libraries used Selenium TestNG
+###libraries used: Selenium, TestNG
 
-Steps to clone execute the tests
+**Steps to clone execute the tests**
+
 git clone https://github.com/qazi2/7_Sender_task_QA
+
 mvn clean compile package
 
-Task 1:
-
-How to run: 
+**Task 1:** 
 
 1. It can be validated by running the build and verify with test report. To view testcases please refer to https://github.com/qazi2/7_Sender_task_QA/blob/master/test_cases.xlsx
 
@@ -22,7 +22,7 @@ How to run:
 3. To view testcases class: https://github.com/qazi2/7_Sender_task_QA/tree/master/src/test/java/let_me_test
 
 
-Task 2: 
+**Task 2:** 
 
 To validate sql queries please refer here: https://github.com/qazi2/7_Sender_task_QA/tree/master/SQL-task
 
