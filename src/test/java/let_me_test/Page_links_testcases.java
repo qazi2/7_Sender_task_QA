@@ -5,23 +5,35 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import webtest_komoot.page_object.Landing_page;
 import webtest_komoot.page_object.Page_links;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import webtest_komoot.base;
 
-public class Page_links_testcases {
+public class Page_links_testcases extends base{
+
+    public WebDriver driver;
+
+
+    @BeforeTest
+    public void initialize() throws IOException
+    {
+
+        driver =initializeDriver();
+
+    }
 
     @Test
     public void Page_link_validation_bottom_links()
     {
-        // creating webdriver instance
-        System.setProperty("webdriver.chrome.driver", "/Users/qazi/Documents/selenium-java-3.141.59/chromedriver");
-        WebDriver driver = new ChromeDriver();
-
-        driver.get("https://komoot.com");
+        // Navigating to a webpage
+        driver.get(prop.getProperty("url"));
         //Implicit wait
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Landing_page l = new Landing_page(driver);
@@ -53,8 +65,6 @@ public class Page_links_testcases {
             System.out.println(driver.getTitle());
 
         }
-        // closing the current browser
-        driver.close();
 
     }
 
@@ -98,10 +108,17 @@ public class Page_links_testcases {
         System.out.println(driver.getTitle());
 
     }
-		// closing the current browser
-        driver.close();
+
 
 }
+
+    @AfterTest
+    public void teardown()
+    {
+
+        driver.close();
+
+    }
 
 }
 

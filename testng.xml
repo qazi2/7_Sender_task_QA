@@ -7,6 +7,7 @@
       <class name="let_me_test.Login_test_cases"/>
       <class name="let_me_test.Page_links_testcases"/>
       <class name="let_me_test.Signup"/>
+      <class name="let_me_test.Unsuccessfull_login"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
