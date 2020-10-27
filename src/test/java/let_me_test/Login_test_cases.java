@@ -15,7 +15,6 @@ import webtest_komoot.page_object.Login_page;
 public class Login_test_cases extends base {
 
     public WebDriver driver;
-
     @BeforeTest
     public void initialize() throws IOException
     {
@@ -53,7 +52,6 @@ public class Login_test_cases extends base {
         w.until(ExpectedConditions.urlContains("https://www.komoot.com/discover"));
         // Validating successful login
         Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase("https://www.komoot.com/discover"));
-        // closing the current browser
     }
 
     @AfterTest

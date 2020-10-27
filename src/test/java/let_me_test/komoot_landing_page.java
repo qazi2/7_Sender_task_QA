@@ -1,5 +1,4 @@
 package let_me_test;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -21,7 +20,7 @@ public class komoot_landing_page extends base{
     }
 
     @Test
-    public void setDriver() {
+    public void setDriver() throws IOException  {
         driver.get(prop.getProperty("url"));
         String expectedTitle = "Komoot | Everything You Need To Explore More of the Great Outdoors";
         String originalTitle = driver.getTitle();
@@ -31,7 +30,7 @@ public class komoot_landing_page extends base{
     }
 
     @AfterTest
-    public void teardown()
+    public void teardown ()
     {
 
         driver.close();

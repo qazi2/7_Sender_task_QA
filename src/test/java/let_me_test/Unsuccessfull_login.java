@@ -1,5 +1,7 @@
 package let_me_test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -14,8 +16,6 @@ import webtest_komoot.page_object.Login_page;
 public class Unsuccessfull_login extends base {
 
     public WebDriver driver;
-
-
     @BeforeTest
     public void initialize() throws IOException
     {
@@ -44,10 +44,8 @@ public class Unsuccessfull_login extends base {
         lp.getLogin().click();
         lp.getPassword().sendKeys("Muji412789");
         lp.getLogin_button().click();
-        // validating that customer is not able to login with wrong password
-        Assert.assertTrue(driver.findElement(By.cssSelector("[class ='css-12vwrvz']")).getText().equalsIgnoreCase("Unfortunately we couldn’t log you in. Please verify your email and password and try again."));
-        // closing the current browser
 
+     
     }
 
     @AfterTest
