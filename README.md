@@ -13,11 +13,11 @@ The following items should be installed in your system:
 
 git command line tool (https://help.github.com/articles/set-up-git)
 
-**Steps to clone execute the tests**
+**Steps to clone and execute the tests**
 
-git clone https://github.com/qazi2/7_Sender_task_QA
+1. ``` git clone https://github.com/qazi2/7_Sender_task_QA ```
 
-mvn clean compile package
+2. mvn clean compile package
 
 **Task 1:** 
 
