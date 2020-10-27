@@ -49,7 +49,10 @@ public class Logintestcases extends base {
         // w is the object of the class and we can access the method by using the object
         w.until(ExpectedConditions.urlContains("https://www.komoot.com/discover"));
         // Validating successful login
+//        Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase("https://www.komoot.com/discover"));
         Assert.assertTrue(driver.getCurrentUrl().equalsIgnoreCase("https://www.komoot.com/discover"));
+
+
     }
 
     @AfterTest
