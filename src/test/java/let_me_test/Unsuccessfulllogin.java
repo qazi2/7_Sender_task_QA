@@ -1,19 +1,21 @@
 package let_me_test;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import webtest_komoot.base;
 import webtest_komoot.page_object.Landingpage;
 import webtest_komoot.page_object.Loginpage;
-import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
-public class Signup extends base {
+public class Unsuccessfulllogin extends base {
 
     public WebDriver driver;
-
-
     @BeforeTest
     public void initialize() throws IOException
     {
@@ -21,24 +23,29 @@ public class Signup extends base {
         driver =initializeDriver();
 
     }
+
+
+    // negative testcase
     @Test
-    public void Successfulsignup()
+    public void Unsuccessful_login()
     {
         // Navigating to a webpage
         driver.get(prop.getProperty("url"));
-        // creating object of Landing_page
+        // creating object of landing_page class
         Landingpage l = new Landingpage(driver);
-        // accessing methods
+        // accessing methods from Landing_page
         l.ge_accept_cookie().click();
         // creating object of Login_page
         Loginpage lp = l.getLogin();
-        lp.getEmail().sendKeys("qazifghkk@gmail.com");
+        // accessing getemail() methods from Landing_page and sending keys and can also be done via data properties
+        lp.getEmail().sendKeys("qazimujahid3@gmail.com");
         lp.getLogin().click();
-        lp.getusername().sendKeys("Seven_senders_1");
-        lp.getPassword().sendKeys("seven5671");
+        lp.getPassword().sendKeys("Muji412789");
         lp.getLogin_button().click();
 
+
     }
+
     @AfterTest
     public void teardown()
     {
@@ -47,4 +54,7 @@ public class Signup extends base {
 
     }
 
+
 }
+
+

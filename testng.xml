@@ -3,12 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="let_me_test.komoot_landing_page"/>
-      <class name="let_me_test.Login_test_cases"/>
-      <class name="let_me_test.Page_links_header"/>
-      <class name="let_me_test.Page_link_bottom"/>
+      <class name="let_me_test.komootlandingpage"/>
+      <class name="let_me_test.Logintestcases"/>
+      <class name="let_me_test.Pagelinksheader"/>
+      <class name="let_me_test.Pagelinkbottom"/>
       <class name="let_me_test.Signup"/>
-      <class name="let_me_test.Unsuccessfull_login"/>
+      <class name="let_me_test.Unsuccessfulllogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

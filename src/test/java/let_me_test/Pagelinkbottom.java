@@ -8,8 +8,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import webtest_komoot.base;
-import webtest_komoot.page_object.Landing_page;
-import webtest_komoot.page_object.Page_links;
+import webtest_komoot.page_object.Landingpage;
+import webtest_komoot.page_object.Pagelinks;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 
-    public class Page_link_bottom  extends base {
+    public class Pagelinkbottom  extends base {
 
         public WebDriver driver;
 
@@ -31,16 +31,14 @@ import java.util.concurrent.TimeUnit;
 
 
         @Test
-        public void Page_link_validation_bottom_links()
+        public void Linksonfooter()
         {
             // Navigating to a webpage
             driver.get(prop.getProperty("url"));
-            //Implicit wait
-            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-            Landing_page l = new Landing_page(driver);
+            Landingpage l = new Landingpage(driver);
             l.ge_accept_cookie().click();
 
-            Page_links p = new Page_links(driver);
+            Pagelinks p = new Pagelinks(driver);
             System.out.println(p.size_footer().getSize());
 
             WebElement coloumndriver=p.footerdriver().findElement(By.xpath("//*[@id='footer']/section/div"));
@@ -74,7 +72,7 @@ import java.util.concurrent.TimeUnit;
         public void teardown()
         {
 
-            driver.close();
+            driver.quit();
 
         }
 

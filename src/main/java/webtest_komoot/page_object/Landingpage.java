@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
-public class Landing_page {
+public class Landingpage {
 
     public  WebDriver driver;
 
@@ -15,16 +15,16 @@ public class Landing_page {
 
 
 
-    public Landing_page(WebDriver driver) {
+    public Landingpage(WebDriver driver) {
         // TODO Auto-generated constructor stub
 
         this.driver=driver;
 
     }
 
-    public Login_page getLogin() {
+    public Loginpage getLogin() {
         driver.findElement(sign_up_login).click();
-        Login_page lp = new Login_page(driver);
+        Loginpage lp = new Loginpage(driver);
         return lp;
     }
 

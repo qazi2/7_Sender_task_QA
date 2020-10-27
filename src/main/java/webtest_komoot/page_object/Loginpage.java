@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Login_page {
+public class Loginpage {
     public WebDriver driver;
 
     private By email=By.cssSelector("[id='email']");
@@ -14,7 +14,7 @@ public class Login_page {
     private By Login_button = By.cssSelector("[class='css-1how7p2']");
     private By user_name=By.cssSelector("[id='display_name']");
 
-    public Login_page(WebDriver driver) {
+    public Loginpage(WebDriver driver) {
         // TODO Auto-generated constructor stub
 
         this.driver=driver;

@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import webtest_komoot.base;
 import java.io.IOException;
 
-public class komoot_landing_page extends base{
+public class komootlandingpage extends base{
 
     public WebDriver driver;
 

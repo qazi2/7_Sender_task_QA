@@ -7,15 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import webtest_komoot.page_object.Landing_page;
-import webtest_komoot.page_object.Page_links;
+import webtest_komoot.page_object.Pagelinks;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import webtest_komoot.base;
 
-public class Page_links_header extends base{
+public class Pagelinksheader extends base{
 
     public WebDriver driver;
 
@@ -28,15 +27,13 @@ public class Page_links_header extends base{
     }
 
     @Test
-    public void Page_link_validation_Top_links()
+    public void Linksonheader()
     {
         // Navigating to a webpage
         driver.get(prop.getProperty("url"));
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         driver.findElement(By.xpath("//*[@id='gdpr_banner_portal']/div/div/div/div/div[2]/div/div[1]/button/div/div")).click();
 
-        Page_links p = new Page_links(driver);
+        Pagelinks p = new Pagelinks(driver);
         System.out.println(p.size_footer().getSize());
         WebElement coloumndriver=p.footerdriver().findElement(By.xpath("//*[@id='pageMountNode']/div/div[1]/div/div/div[1]"));
         System.out.println(coloumndriver.findElements(By.tagName("a")).size());
@@ -69,7 +66,7 @@ public class Page_links_header extends base{
     public void teardown()
     {
 
-        driver.close();
+        driver.quit();
 
     }
 

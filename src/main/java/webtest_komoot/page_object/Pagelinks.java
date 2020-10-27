@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Page_links {
+public class Pagelinks {
 
     private By footer_size=By.tagName("a");
     private By footer_driver= By.id("footer");
@@ -12,7 +12,7 @@ public class Page_links {
         public WebDriver driver;
 
 
-        public Page_links(WebDriver driver) {
+        public Pagelinks(WebDriver driver) {
             // TODO Auto-generated constructor stub
 
             this.driver=driver;
