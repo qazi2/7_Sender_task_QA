@@ -17,7 +17,7 @@ git command line tool (https://help.github.com/articles/set-up-git)
 
 1. ``` git clone https://github.com/qazi2/7_Sender_task_QA ```
 
-2. mvn clean compile package
+2. ``` mvn clean compile package ```
 
 **Task 1:** 
 
