@@ -1,0 +1,46 @@
+
+
+1. Navigate to: https://www.jenkins.io/download/ 
+
+Download Generic Java Package (.war)
+
+2. Run the following command (USER_NAME is your directory user)
+
+  java -jar /Users/USER_NAME/Downloads/jenkins.war --httpPort=8080
+
+3. After succesfull login open the url in browser and install all dependencies by selecting auto install method
+
+http://localhost:8080/
+
+4. When the process is finished and jenkins UI is viewable, open the terminal and type the below command (don't forget to change USER_NAME)
+
+cd 	/Users/USER_NAME/.jenkins
+
+5. Run the following command (don't forget to change USER_NAME)
+
+   open /Users/USER_NAME/.jenkins
+
+6. Replace all files with jenkins_files folder from downloads (jenkins_files folder send via email to seven_sender)
+
+7. After replacing files goto>Terminal and type (USER_NAME is your directory user)
+
+java -jar /Users/USER_NAME/Downloads/jenkins.war --httpPort=8080
+
+8. Login with following credentials:
+
+Username: 7_senders
+password: sevensenders
+
+9. Click on 7sender_task
+
+10. Click on Build Now 
+
+11. As per the requirement the build will run on every night (time: 23.30) 
+
+12. To view Build Schedule 
+
+http://localhost:8089/job/7sender_task/configure
+
+To change schedule goto>Build Triggers>Build periodically>Schedule
+
+
