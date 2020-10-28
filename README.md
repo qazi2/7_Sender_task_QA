@@ -33,3 +33,9 @@ git command line tool (https://help.github.com/articles/set-up-git)
 To validate sql queries please refer here: https://github.com/qazi2/7_Sender_task_QA/tree/master/SQL-task
 
 queries can be found here: https://github.com/qazi2/7_Sender_task_QA/blob/master/SQL-task/sql_queries.pdf 
+
+**Task 3:** 
+
+To validate Jenkins setup: https://github.com/qazi2/7_Sender_task_QA/tree/master/Jenkins
+
+- Jenkins file is shared via email
