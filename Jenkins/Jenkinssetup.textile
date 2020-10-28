@@ -2,7 +2,7 @@
 
 1. Navigate to: https://www.jenkins.io/download/ 
 
-``` Download Generic Java Package (.war) ```
+   Download Generic Java Package (.war)
 
 2. Run the following command (USER_NAME is your directory user)
 
