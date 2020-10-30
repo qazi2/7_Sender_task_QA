@@ -8,7 +8,7 @@ public class Landingpage {
 
     public  WebDriver driver;
 
-    private By sign_up_login=By.cssSelector("[class='tw-inline-flex tw-justify-center tw-items-center c-btn c-btn--primary-inv']");
+     private By sign_up_login=By.cssSelector("[class='tw-flex tw-items-center']");
     private By title=By.xpath("//*[@id=pageMountNode]/div/div[2]/div/main/div[1]/div[1]/div/div[1]/div/div/div[1]/div/div[1]/h3");
     private By cookie_Accept = By.xpath("//*[@id='gdpr_banner_portal']/div/div/div/div/div[2]/div/div[1]/button/div/div");
 
